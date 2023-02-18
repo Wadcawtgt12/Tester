@@ -1,11 +1,11 @@
 {
-  "name": "Alphabot-Md",
+  "name": "Awan",
   "version": "17.0.4",
-  "description": "Alphabot Md, Only update in YouTube ZEEONE OFC",
-  "main": "zeeone.js",
+  "description": "OFC",
+  "main": "awan.js",
   "license": "MIT",
   "scripts": {
-    "start": "node zeeone.js"
+    "start": "node awan.js"
    },
   "keywords": [
     "whatsapp",
@@ -14,7 +14,7 @@
     "base",
     "baileys-md"
   ],
-  "author": "ZeeoneOfc",
+  "author": "AwanOfc",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "npm:baileys@^6.0.7",

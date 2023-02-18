@@ -1,2 +1,2 @@
 language="nodejs"
-run="pm2 start zeeone.js && pm2 save && pm2 logs"
+run="node . --db 'mongodb+srv://AkunBaruNomorSembilan:AkunBaruKe9.@cluster0.k4bzmz2.mongodb.net/?retryWrites=true&w=majority'"

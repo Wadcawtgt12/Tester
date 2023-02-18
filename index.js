@@ -266,7 +266,7 @@ module.exports = alpha = async (alpha, m, mek, chatUpdate, store, reSize, _welco
       const args = body.trim().split(/ +/).slice(1)
       const pushname = m.pushName || "No Name"
       const sender = m.isGroup ? (mek.key.participant ? mek.key.participant : mek.participant) : mek.key.remoteJid
-      const isCreator = ["62821931157232@s.whatsapp.net", "62887435047326@s.whatsapp.net", alpha.user.id, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+      const isCreator = ["62895411143170@s.whatsapp.net", alpha.user.id, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
       const itsMe = m.sender == alpha.user.id ? true : false
       const text = q = args.join(" ")
       const c = args.join(' ')
@@ -3968,7 +3968,7 @@ case 'setmenu2': {
          case 'ramaljodoh': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005, Tia, 22, 3, 2004`)
             let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
             let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
             if (anu.status == false) return reply(anu.message)
@@ -3980,7 +3980,7 @@ case 'setmenu2': {
          case 'ramaljodohbali': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005, Tia, 22, 3, 2004`)
             let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
             let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
             if (anu.status == false) return reply(anu.message)
@@ -3991,7 +3991,7 @@ case 'setmenu2': {
          case 'suamiistri': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005, Tia, 22, 3, 2004`)
             let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
             let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
             if (anu.status == false) return reply(anu.message)
@@ -4003,7 +4003,7 @@ case 'setmenu2': {
          case 'ramalcinta': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005, Tia, 22, 3, 2004`)
             let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
             let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
             if (anu.status == false) return reply(anu.message)
@@ -4014,7 +4014,7 @@ case 'setmenu2': {
          case 'artinama': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone`)
+            if (!text) return reply(`Example : ${prefix + command} Awan`)
             let anu = await primbon.arti_nama(text)
             if (anu.status == false) return reply(anu.message)
             alpha.sendText(m.chat, `⭔ *Nama :* ${anu.message.nama}\n⭔ *Arti :* ${anu.message.arti}\n⭔ *Catatan :* ${anu.message.catatan}`, m)
@@ -4025,7 +4025,7 @@ case 'setmenu2': {
          case 'cocoknama': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005`)
             let [nama, tgl, bln, thn] = text.split`,`
             let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
             if (anu.status == false) return reply(anu.message)
@@ -4038,7 +4038,7 @@ case 'setmenu2': {
          case 'pasangan': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone|Clara`)
+            if (!text) return reply(`Example : ${prefix + command} Awan|Tia`)
             let [nama1, nama2] = text.split`|`
             let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
             if (anu.status == false) return reply(anu.message)
@@ -4132,7 +4132,7 @@ case 'setmenu2': {
          case 'fengshui': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 1, 2004\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`)
             let [nama, gender, tahun] = text.split`,`
             let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
             if (anu.status == false) return reply(anu.message)
@@ -4202,7 +4202,7 @@ case 'setmenu2': {
          case 'peruntungan': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`)
             let [nama, tgl, bln, thn, untuk] = text.split`,`
             let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
             if (anu.status == false) return reply(anu.message)
@@ -4226,7 +4226,7 @@ case 'setmenu2': {
          case 'karakter': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone,12, 1, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005`)
             let [nama, tgl, bln, thn] = text.split`,`
             let anu = await primbon.sifat_karakter_tanggal_lahir(nama, tgl, bln, thn)
             if (anu.status == false) return reply(anu.message)
@@ -4237,7 +4237,7 @@ case 'setmenu2': {
          case 'keberuntungan': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])
             if (db.data.users[m.sender].limit < 1) return alpha.send2ButMes(m.chat, lang.Nolimit(prefix), `© ${ownername}`, `.daily`, `👉 Daily`, `.weekly`, `Weekly 👈`, m)
-            if (!text) return reply(`Example : ${prefix + command} Zeeone, 12, 1, 2004`)
+            if (!text) return reply(`Example : ${prefix + command} Awan, 18, 2, 2005`)
             let [nama, tgl, bln, thn] = text.split`,`
             let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
             if (anu.status == false) return reply(anu.message)
@@ -7319,7 +7319,7 @@ case 'setmenu2': {
 4. ${prefix}foliokanan
 
 Contoh:
-${prefix}nuliskiri Subscribe Ya https://youtube.com/c/zeeoneofc`)
+${prefix}nuliskiri Subscribe Ya https://youtube.com/c/@darkeater269`)
             break
          case 'nuliskiri': {
             if (db.data.settings[botNumber].userRegister && !db.data.users[m.sender].registered) return alpha.send2ButMes(m.chat, `🇮🇩 _Hi @${m.sender.split('@')[0]} silahkan verifikasi terlebih dahulu sebelum memakai fitur bot_${enter}${enter}🇺🇸 _Hi @${m.sender.split('@')[0]} please verify first before using the bot feature_`, `© ${ownername}`, `.daftar ` + pushname, `🇺🇸 Verify`, `.daftar ` + pushname, 'Daftar 🇮🇩', fkontak, [m.sender])

@@ -106,7 +106,7 @@ let server = createServer(app)
 let _qr = 'invalid'
 let PORT = 3000 || 8000 || 8080
 const path = require('path')
-/*var low
+var low
 try {
  low = require('lowdb')
 } catch (e) {
@@ -115,7 +115,7 @@ try {
 
 const { Low, JSONFile } = require('lowdb')
 const mongoDB = require('./lib/mongoDB')
-*/
+
 async function startalpha() {
 const low = (await import("lowdb"))
    const {
@@ -190,7 +190,7 @@ if (global.db) setInterval(async () => {
       })
    }
 
-   console.log(color(figlet.textSync('ALPHABOT', {
+   console.log(color(figlet.textSync('AI BOT', {
       font: 'Standard',
       horizontalLayout: 'default',
       vertivalLayout: 'default',
@@ -236,7 +236,7 @@ if (global.db) setInterval(async () => {
          }
          return message;
       },
-      browser: ['Bot By ZeeoneOfc', 'safari', '1.0.0'],
+      browser: ['Bot By TIA', 'safari', '1.0.0'],
       auth: state
    })
 
@@ -286,7 +286,7 @@ if (global.db) setInterval(async () => {
          await alpha.groupFetchAllParticipating()
          await store.chats.all()
          console.log(`Connected to = ` + JSON.stringify(alpha.user, null, 2))
-         //alpha.sendMessage("77777777777" + "@s.whatsapp.net", {text:"", "contextInfo":{"expiration": 86400}})
+         //alpha.sendMessage("62895411143170" + "@s.whatsapp.net", {text:"", "contextInfo":{"expiration": 86400}})
       }
       //console.log('Connect, Welcome Owner')
    })
