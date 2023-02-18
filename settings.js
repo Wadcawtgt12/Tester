@@ -24,12 +24,12 @@ edit sewabot di file settings.js line 19
 `
 // setting 
 global.firtsChat = true //send firts message to new user
-global.autoread = true // auto read message
+global.autoread = false // auto read message
 global.antidelete = false // anti delete
-global.antiviewonce = true // anti view once
+global.antiviewonce = false // anti view once
 global.autobio = false //auto ganti bio
 global.anticall = true //anti call 
-global.userRegister = false
+global.userRegister = true
 global.autoblok212 = false //ubah jadi true biar nmr 212 di blok sama bot
 
 //language
@@ -41,9 +41,9 @@ global.language = indonesia //change indonesia to english if you don't understan
 
 // Other
 // Other
-global.botname = "Alphabot-Mdོ" //namabot kalian
-global.ownername = "ᴹᴿ᭄ ZeeoneOfcོ ×፝֟͜×" //nama kalian
-global.myweb = "https://s.id/zeeoneofc" //bebas asal jan hapus
+global.botname = "Ai Karuizawa Bot" //namabot kalian
+global.ownername = "Awan" //nama kalian
+global.myweb = "https://aanimeid.blogspot.com" //bebas asal jan hapus
 global.youtube = "https://youtube.com/c/@ZeeoneOfc" //bebas asal jan hapus
 global.myweb2 = "https://s.id/zeeoneofc" //bebas
 global.email = "zeeoneofc@gmail.com" //bebas
